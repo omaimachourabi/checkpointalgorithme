@@ -1,0 +1,23 @@
+ALGORITHM  phrase
+VAR
+ p,voy: STRING;
+ nb,i: INTEGER ;   
+BEGIN
+nb:=0;
+ write("entrer une phrase");
+ read(p);
+
+FOR i FROM 1 TO len(p) STEP step  DO
+     IF (i='.') THEN
+          nb:=nb+1;
+   
+    ELSE ((i="a")||(i="e")||(i="i")||(i="o")||(i="u")||(i="y")) THEN
+          voy:=voy+1;
+    
+    END_IF 
+   
+ END_FOR
+ write("p",nb,"voy")
+ 
+END
+
